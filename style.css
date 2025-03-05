@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Microsoft YaHei', sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.game-description {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #7f8c8d;
+}
+
+.game-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #3498db;
+}
+
+button {
+    padding: 12px 24px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#message {
+    padding: 15px;
+    text-align: center;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.history {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.history h3 {
+    margin-bottom: 10px;
+    color: #2c3e50;
+    text-align: center;
+}
+
+#history-list {
+    list-style-type: none;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+#history-list li {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+}
+
+#history-list li:last-child {
+    border-bottom: none;
+}
+
+.game-stats {
+    text-align: center;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.correct {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.too-high {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.too-low {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.hidden {
+    display: none;
+}
+
+#restart {
+    background-color: #28a745;
+    margin-top: 10px;
+}
+
+#restart:hover {
+    background-color: #218838;
+}
